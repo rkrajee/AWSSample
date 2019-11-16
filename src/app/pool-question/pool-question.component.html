@@ -1,0 +1,23 @@
+<div>
+<p>
+Are you intrested in Friday Fun activity?
+</p>
+
+<div class="form-check form-check-inline">
+  <input type="radio" class="form-check-input" id="yes" name="question" [(ngModel)]="answer" [value]= "checked" mdbInput>
+  <label class="form-check-label" for="yes">Yes</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input type="radio" class="form-check-input" id="no" name="question" [(ngModel)]="answer" [value]="unChecked" mdbInput>
+  <label class="form-check-label" for="no">No</label>
+</div>
+<br/>
+<div >
+<button class="btn btn-default" (click)="onSubmit()">Submit</button>
+</div>
+</div>
+<br/><br/>
+<div>
+  <button class="btn btn-default" (click)="logout()">Logout</button>
+  </div>

@@ -1,0 +1,23 @@
+<div style="text-align:left;width:500px;">
+    <h1>
+        {{ title }}!
+    </h1>
+
+    <table *ngIf="data">
+        <!-- ADD HEADERS -->
+        <tr>
+                <th>Name of User</th>
+                    <th>Intrested/Not Intrested</th>
+        </tr>
+
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let b of data" >
+            <td>{{b.name}}</td>
+            <td>{{b.response}}</td>
+           </tr>
+    </table>
+</div>
+
+<div>
+<button class="btn btn-default" (click)="logout()">Logout</button>
+</div>

@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name": "gayu",
+      "response": "yes"
+    },
+    {
+      "id": 2,
+      "name": "shree",
+      "response": "no"
+    },
+    {
+      "id": 3,
+      "name": "helooo",
+      "response": "yes"
+    },
+    {
+      "id": 4,
+      "name": "kumar",
+      "response": "no"
+    },
+    {
+      "id": 5,
+      "name": "nandha",
+      "response": "yes"
+    },
+    {
+      "id": 6,
+      "name": "gayathri",
+      "response": "no"
+    }
+  ]
+}
