@@ -20,13 +20,14 @@ reply:string;
 
   logout()
   {
+    sessionStorage.removeItem('user');
     this.router.navigate(['app-login']);
   }
 
  onSubmit(){
    var user = sessionStorage.getItem("user");
    var id = Math.floor((Math.random()));
-   //alert("your response submitted successfully" + this.answer + user);
+   alert("your response submitted successfully" + this.answer + user);
    const axios = require('axios');
    if(this.answer == true)
    {

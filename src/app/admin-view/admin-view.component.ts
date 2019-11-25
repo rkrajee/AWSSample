@@ -18,6 +18,7 @@ title ='List of users with their interest';
     //s }
     logout()
     {
+      sessionStorage.removeItem('user');
       this.router.navigate(['app-login']);
     }
   ngOnInit() {

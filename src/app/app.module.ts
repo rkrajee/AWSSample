@@ -8,7 +8,9 @@ import { PoolQuestionComponent } from './pool-question/pool-question.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LogoutComponent } from './logout/logout.component';
-
+import { MatCardModule,MatInputModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,11 @@ import { LogoutComponent } from './logout/logout.component';
     AppRoutingModule,
     FormsModule,
     
+    MatCardModule,
+    MatInputModule,
+    BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

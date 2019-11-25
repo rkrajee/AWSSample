@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import { HttpClient} from '@angular/common/http';
 import {userDetails} from '../userDetails';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   password: string;
   data: string[];
   userDetails : userDetails[];
-    constructor(private router : Router,private http : HttpClient) { }
+    constructor(private router : Router,private http : HttpClient, private formBuilder: FormBuilder) { }
   
     ngOnInit() {
      // this.http.get('http://localhost:3001/users')
