@@ -6,7 +6,7 @@ import { PoolQuestionComponent } from './pool-question/pool-question.component';
 import {AdminViewComponent} from './admin-view/admin-view.component';
 
 const routes: Routes = [
-    { path: '', component: LoginComponent },
+    { path: '', component: PoolQuestionComponent },
     { path: 'app-login', component: LoginComponent },
     {path : 'app-pool-question', component : PoolQuestionComponent},
     {path: 'app-admin-view',component : AdminViewComponent}
